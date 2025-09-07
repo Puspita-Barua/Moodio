@@ -5,7 +5,7 @@ app = Flask(__name__)
 def home():
     return "OK: Spotify redirect server is running."
 
-@app.get("https://moodio-j3ay.onrender.com/callback/")
+@app.get("https://moodio-j3ay.onrender.com/callback")
 def callback():
     code = request.args.get("code")
     state = request.args.get("state")
